@@ -2,8 +2,7 @@
 Introduction &amp; presentation for routing
 
 # Routers
-Routers are devices which make it possible to "choose" the path that datagrams will take to arrive at the destination. 
-They are machines with several network interface cards each one of which is linked to a different network. So, in the simplest configuration, the router only has to "look at" what network a computer is located on to send datagrams to it from the originator. 
+Routers are the devices on the paths between source hosts and destination hosts. Datagrams are delivered through these paths. A router stores multiple network interfaces connected to difference networks. The routers only check the location of the source host, and implement the corresponding network interface to forward the datagram.
 
 # The routing table
 The routing table is a table of connections between the target machine address and the node according to which the router must deliver the message. In reality it is enough that the message is delivered to the network that contains the machine, it is therefore not necessary to store the complete IP address of the machine: only the network identifier of the IP address 
